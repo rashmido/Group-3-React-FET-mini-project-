@@ -1,0 +1,206 @@
+/* START Front Dashboard*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* START carousel slider */
+.carousel-item{
+    height: 90vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover ;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+
+.carousel-caption h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+.carousel-caption p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 2rem;
+}
+
+/* END carousel slider */
+#abouttext{
+    text-align: center;
+}
+
+/* END Front Dashboard*/
+
+/* START- User Dashborad */
+ul.navbar-nav li.nav-dropdown{
+    margin-left: auto;
+    margin-right: 20px;
+    forced-color-adjust: white;  
+}
+.userHome{
+    background-image: url('/Images/userHome1.jpeg');
+    background-size: cover;
+
+}
+.homeText{
+    color: white;
+}
+/* END- User Dashborad */
+
+
+
+/* START- User Registration */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.registerBody{
+    background-image: url('/Images/register.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 40px;
+    color: black;
+    margin-top: 250px;
+}
+
+h4{
+    font-size: 25px;
+    color: black;
+}
+.col-md-5{
+    margin-top: 20px;
+    box-shadow: -1px 1px 60px 10px;
+    
+}
+.label{
+    font-weight: normal;
+    margin-top: 12px;
+}
+.form-control{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    height: 40px;
+}
+/* END- User Registration */
+
+/* START- User Login */
+.loginUser{
+    /* background: rgb(17, 72, 72); */
+    background-image: url('/Images/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    
+}
+#textcolor{
+    color: red;
+}
+.text{
+    color: white;
+}
+#signin{
+    margin: left 0%;
+}
+#login{
+    background: white;
+    border-radius: 50px;
+    width: 60%;
+    background-color: transparent;
+    margin-right: 50%;
+}
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+.logiLogo{
+    width: 100px;
+
+}
+.btn1{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background: rgb(213, 24, 24);
+    border: 1px solid;
+    color: black;
+}
+
+/* END- User Login */
+
+
+/* START UserMyAppointment */
+.modal-body{
+    background-image: url('/Images/pngwing.com.png');
+    background-size: cover;
+    height: 450px;
+}
+
+.modal-header{
+    background-color:cadetblue;
+}
+.modal-footer{
+    background-color:cadetblue;
+}
+#logoutuser{
+    margin-left: auto;
+    margin-right: 20px;
+}
+/* END UserAppointment */
+
+/* START UserScheduleAppoinment */
+
+.scheduleAppoint{
+    background-image: url('/Images/pngwing.com.png');
+    background-size: cover;
+}
+/* END UserScheduleAppoinment */
+
+/* START UserSchedule */
+#table {
+    margin-top: 6%;
+    margin-left: 20%;
+    margin-right:20;
+    height: 30%;
+    width: 60%;
+}
+#search{
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: 20%;
+
+}
+.myAppoint{
+    background-image: url('/Images/pngwing.com.png');
+    background-size: cover;
+}
+/* END UserSchedule */
+
+
+
+
+/* START doctor dashboard */
+/* END Doctor Dashboard*/

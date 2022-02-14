@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Registration</title>
+</head>
+
+
+
+
+<body class="registerBody">
+    <nav class="navbar navbar-expand-lg navbar-dark btn-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/Images/logo.png" height="40px"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item">  
+                        <a class="nav-link" href="http://127.0.0.1:8887/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./userRegistration.html">Register</a>
+                      </li>
+                      <li class="nav-item dropdown nav-dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Login
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="./userLogin.html">User Login</a></li>
+                              <li><a class="dropdown-item" href="#">Doctor login</a></li>
+                          </ul>
+                          
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-left">MedCon Appointment Application</h1>
+                <p class="text-left">We offer innovative, customized and cost-efficient solutions to customers who are
+                    in need of physician supervision or direction.
+                    We can provide protocols and QI programs, or use yours. We can standup a training program, or
+                    support your existing one. Our goal is always to bring the tools to bear that best fit your needs,
+                    customer expectations and budget.
+                    We have extensive experience in post-acute care and bundled payment programs, and can provide a wide
+                    range of services in support of those initiatives. MedCon providers care for patients in assisted
+                    and independent living, memory care and personal care homes.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div class="col-md-6">
+                    <h4 class="text-left">Registration Form</h4>
+                </div>
+                <hr>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Name:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="Name" placeholder="Name" id="name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Email:</label>
+                    <div class="col-md-10">
+                        <input type="Email" class="form-control" name="email" placeholder="Email" id="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label col-md-2 control-label">Age:</label>
+                    <div class="col-md-10">
+                        <input type="number" class="form-control" placeholder="Age" id="age" required>
+                    </div>
+                    <div class="row">
+                        <label class="label col-md-2 control-label">City:</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" placeholder="City" id="City" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Gender</label>
+                        <div class="col-md-10">
+                            <input type="radio" name="gn" value="male"><small>Male</small>
+                            <input type="radio" name="gn" value="female"><small>female</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Mobile:</label>
+                        <div class="col-md-10">
+                            <input type="tel" pattern="[0-9]{10}" placeholder="Enter your contact" id="mobile" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="label col-md-2 control-label">UserName:</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="Name" placeholder="User Name" id="username">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Password:</label>
+                        <div class="col-md-10">
+                            <input type="password" class="form-control" name="password" placeholder="password"
+                                id="password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="label col-md-2 control-label">Confrirm Password:</label>
+                        <div class="col-md-10">
+                            <input type="password" class="form-control" name="Password" placeholder="Confrim Password"
+                                id="confirmPassword">
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="btn btn-secondary btn-sm">Submit</div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
