@@ -13,12 +13,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
-
+    <script src="/js/users/registration.js"></script>
     <title>Registration</title>
 </head>
-
-
-
 
 <body class="registerBody">
     <nav class="navbar navbar-expand-lg navbar-dark btn-dark">
@@ -26,35 +23,36 @@
             <a class="navbar-brand" href="#"><img src="/Images/logo.png" height="40px"></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav w-100">
-                    <li class="nav-item">  
+                    <li class="nav-item">
                         <a class="nav-link" href="http://127.0.0.1:8887/">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Services</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Contact Us</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./userRegistration.html">Register</a>
-                      </li>
-                      <li class="nav-item dropdown nav-dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Login
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <li><a class="dropdown-item" href="./userLogin.html">User Login</a></li>
-                              <li><a class="dropdown-item" href="#">Doctor login</a></li>
-                          </ul>
-                          
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./userRegistration.html">Register</a>
+                    </li>
+                    <li class="nav-item dropdown nav-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./userLogin.html">User Login</a></li>
+                            <li><a class="dropdown-item" href="#">Doctor login</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row">
@@ -95,14 +93,14 @@
                     <div class="row">
                         <label class="label col-md-2 control-label">City:</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" placeholder="City" id="City" required>
+                            <input type="text" class="form-control" placeholder="city" id="City" required>
                         </div>
                     </div>
                     <div class="row">
                         <label class="label col-md-2 control-label">Gender</label>
                         <div class="col-md-10">
-                            <input type="radio" name="gn" value="male"><small>Male</small>
-                            <input type="radio" name="gn" value="female"><small>female</small>
+                            <input type="radio" name="gn" id="male" value="male"><small>Male</small>
+                            <input type="radio" name="gn" id="female" value="female"><small>female</small>
                         </div>
                     </div>
                     <div class="row">
@@ -125,20 +123,26 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="label col-md-2 control-label">Confrirm Password:</label>
+                        <label class="label col-md-2 control-label">Confirm Password:</label>
                         <div class="col-md-10">
-                            <input type="password" class="form-control" name="Password" placeholder="Confrim Password"
+                            <input type="password" class="form-control" name="Password" placeholder="Confirm Password"
                                 id="confirmPassword">
                         </div>
                     </div>
                     <a href="#">
-                        <div class="btn btn-secondary btn-sm">Submit</div>
+                        <div class="btn btn-secondary btn-sm" id="submitBtn">Submit</div>
+                    </a>
+                    <a href="#">
+                        <div class="btn btn-secondary btn-sm" onclick="clearfield()">Clear</div>
                     </a>
 
                 </div>
             </div>
         </div>
     </div>
+<div class="card-footer">
+    <div id="response"></div>
+</div>
 </body>
 
 </html>
